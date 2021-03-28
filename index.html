@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Calculadora de propinas</h1>
+        <form class="form">
+            <div class="item">
+                <label>Cuál es valor de la cuenta a pagar?</label>
+                <input type="text" class="billValue">
+            </div>
+
+            <div class="item">
+                <label>Qué tal estuvo el servicio?</label>
+                <select  class="options">
+                    <option disabled selected value="0">-- Choose an Option --</option>
+                    <option value="0.10">10%-Excelente</option>
+                    <option value="0.05">5%-Bueno</option>
+                    <option value="0.03">3%-Regular</option>
+                    <option value="0.0">0%-Malo</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <label>Cuántas personas desean compartir la cuenta?</label>
+                <input type="text" class="peopleAmount">
+            </div>
+
+            <button class="button">Calcular!</button>
+        </form>
+
+        <p class="result"></p>
+    </div>
+
+<script src="../Tip Calculator/app.js"></script>
+</body>
+</html>
